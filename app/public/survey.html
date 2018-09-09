@@ -6,252 +6,248 @@
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 
+  <div class="background1"></div>
   <div class="container">
-    <div class="jumbotron">
-      <h1 class="text-center"><i class="fa fa-fire"></i>Travel Together</h1>
-      <hr>
-      <h3 class="text-center">Take the survey!!</h3>
-    </div>
-    <div class="personInfo">
-        <form role="form">
-            <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Name">
+    <div class="surveycard card">
+        <h1 class="text-center"><span id="heading">Travel Together</span></h1>
+        <hr>
+        <h3 class="text-center heading2">Take the survey and find yourself a travel companion!!!</h3>
+    
+        <div class="personInfo">
+            <form role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="photo" placeholder="Photo URL">
+                </div>
+            </form>
+        </div>
+        <div class="questionArea">
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="https://kathleenhalme.com/images/surfer-clipart-transparent-background-1.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to spend time on sports activities?</p>
+                            <ul class="options" id="optionsquestion1"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="photo" placeholder="Photo URL">
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="https://currencykart.com/assets/img/itinerary/hotel.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to stay in luxury hotels?</p>
+                            <ul class="options" id="optionsquestion2"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </form>
-    </div>
-    <div class="questionArea">
-        <div class="row">
-            <div class="col-lg-12">
-                <p>1. Do you like to spend time on sports activities?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question1">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question1">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question1">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question1">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question1">
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="https://cdn.pixabay.com/photo/2016/03/31/21/15/bread-1296280_960_720.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to eat local food?</p>
+                            <ul class="options" id="optionsquestion3"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="https://cdn.pixabay.com/photo/2014/04/03/00/29/car-308454_960_720.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to rent a car/bike and drive it yourself?</p>
+                            <ul class="options" id="optionsquestion4"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="https://hanslodge.com/images/rTjrk7Aac.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to start the day early?</p>
+                            <ul class="options" id="optionsquestion5"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="https://orig00.deviantart.net/85ae/f/2012/235/f/8/club_penguin_dj_png_by_glenmartinez-d5c61id.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like late night parties?</p>
+                            <ul class="options" id="optionsquestion6"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/512/shop-icon.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to shop for souvenirs?</p>
+                            <ul class="options" id="optionsquestion7"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="http://www.transparentpng.com/thumb/brass-band-instrument-png/brass-band-instrument-png-transparent-1.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like local music?</p>
+                            <ul class="options" id="optionsquestion8"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="http://clipart.coolclips.com/480/vectors/tf05109/CoolClips_peop3452.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to visit tourist attractions?</p>
+                            <ul class="options" id="optionsquestion9"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row question">
+                <div class="col-lg-4 text-right">
+                    <img class="img-responsive questionicon" src="http://clipart.coolclips.com/480/vectors/tf05310/CoolClips_vc063071.png">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Do you like to discover new places?</p>
+                            <ul class="options" id="optionsquestion10"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>2. do you like to stay in luxury hotels?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question2">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question2">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question2">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question2">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question2">
-            </div>
+        <div class="text-center" id="buttonarea">
+            <button type="submit" class="btn btn-primary btn-md" id="find-btn" data-toggle="modal" data-target="#exampleModal">Find Travel Companion</button>
         </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>3. Do you like to eat local food?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question3">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question3">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question3">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question3">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question3">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>4. Do you like to rent a car/bike and drive it yourself?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question4">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question4">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question4">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question4">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question4">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>5. Do you like to start the day early?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question5">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question5">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question5">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question5">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question5">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>6. do you like late night parties?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question6">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question6">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question6">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question6">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question6">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>7. Do you like to shop for souvenirs?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question7">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question7">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question7">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question7">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question7">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>8. Do you like local music?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question8">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question8">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question8">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question8">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question8">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>9. Do you like to visit tourist attractions?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question9">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question9">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question9">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question9">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question9">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>10. Do you like to discover new places?</p>
-                <label for= "option1">1</label>
-                <input type="radio" id="option1" value="1" name="question10">
-                <label for= "option2">2</label>
-                <input type="radio" id="option2" value="2" name="question10">
-                <label for= "option3">3</label>
-                <input type="radio" id="option3" value="3" name="question10">
-                <label for= "option4">4</label>
-                <input type="radio" id="option4" value="4" name="question10">
-                <label for= "option5">5</label>
-                <input type="radio" id="option5" value="5" name="question10">
-            </div>
-        </div>
-    </div>
-    <div class="text-right">
-        <button type="submit" class="btn btn-primary btn-md" id="find-btn" data-toggle="modal" data-target="#exampleModal">Find Travel Companion</button>
-    </div>
       
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"></h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <img class="img-responsive" id="companionPicture"/>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-body">
-            <img class="img-responsive" id="companionPicture"/>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
 
-    <div class="row">
-      <div class="col-lg-12">
-        <a href="/api/companion">API Companion List</a> |
-        <a href="#">Github Link</a>
-      </div>
+        <div class="row">
+        <div class="col-lg-12 text-center">
+            <a href="/api/companion">API Companion List</a> |
+            <a href="#">Github Link</a>
+        </div>
+        </div>
     </div>
   </div>
 
   <script type="text/javascript">
-    $("#name").on("focus", function(){
-        $(this).attr("placeholder","");
-    })
-    $("#name").on("blur", function(){
-        $(this).attr("placeholder","Name");
-    })
-    $("#photo").on("focus", function(){
-        $(this).attr("placeholder","");
-    })
-    $("#photo").on("blur", function(){
-        $(this).attr("placeholder","Photo URL");
-    })
-    $("#find-btn").on("click", function(event){
-        event.preventDefault();
-
-        var answersArray = [];
-        for(var i =0;i<10;i++){
-            answersArray.push($("input[name=question"+parseInt(i+1)+"]:checked").val());
-        }
-       
-        var newPerson = {
-            name:$("#name").val(),
-            photoURL:$("#photo").val(),
-            answers:answersArray
-        };
-
-        $.post("/api/companion", newPerson, function(data){
-            $.get("/api/match",function(data){
-                //console.log(data.name);
-                $("#exampleModalLabel").text(data.name);
-                $("#companionPicture").attr("alt",data.photoURL);
-                $("#companionPicture").attr("src",data.photoURL);
-                $("#companionPicture").css("max-height","300px");
-
-            });
-        });
-    });
-  </script>
+      $(document).on("ready", function(){
+          for(var i =0;i<10;i++){
+              for(var j =0;j<5;j++){
+                  var newLi = $("<li>");
+                  if(j===2)
+                      newLi.append(`<input type="radio" value=`+parseInt(j+1)+` id="option`+i+j+`" name="question`+parseInt(i+1)+`" checked=true/>`);
+                  else
+                      newLi.append(`<input type="radio" value=`+parseInt(j+1)+` id="option`+i+j+`" name="question`+parseInt(i+1)+`" />`);
+                  newLi.append(`<label for="option`+i+j+`">`+parseInt(j+1)+`</label>`)
+                  $("#optionsquestion"+parseInt(i+1)).append(newLi);
+              }
+          }
+  
+          $("#name").on("focus", function(){
+              $(this).attr("placeholder","");
+          })
+          $("#name").on("blur", function(){
+              $(this).attr("placeholder","Name");
+          })
+          $("#photo").on("focus", function(){
+              $(this).attr("placeholder","");
+          })
+          $("#photo").on("blur", function(){
+              $(this).attr("placeholder","Photo URL");
+          })
+          $("#find-btn").on("click", function(event){
+              event.preventDefault();
+  
+              var answersArray = [];
+              for(var i =0;i<10;i++){
+                  answersArray.push($("input[name=question"+parseInt(i+1)+"]:checked").val());
+              }
+          
+              var newPerson = {
+                  name:$("#name").val(),
+                  photoURL:$("#photo").val(),
+                  answers:answersArray
+              };
+  
+              $.post("/api/companion", newPerson, function(data){
+                  $.get("/api/match",function(data){
+                      //console.log(data.name);
+                      $("#exampleModalLabel").text(data.name);
+                      $("#companionPicture").attr("alt",data.photoURL);
+                      $("#companionPicture").attr("src",data.photoURL);
+                      $("#companionPicture").css("max-height","300px");
+  
+                  });
+              });
+          });
+      });
+      
+    </script>
 
 </body>
 </html>

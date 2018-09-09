@@ -10,6 +10,5 @@ var peopleArray = [
         answers:[1,1,2,2,3,3,4,4,4,3]
       }
   ];
-  
   // Note how we export the array. This makes it accessible to other files using require.
   module.exports = peopleArray;

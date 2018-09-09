@@ -1,34 +1,104 @@
-body {
-  font-family:sans-serif;
+.background {
+  height: 101vh;
+  width: 100vw;
+  background-image: url("http://www.itsfrontporch.com/wp-content/uploads/6359524176194484221446729975_travel-01.jpg");
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: screen;
+  position: fixed;
+  z-index: -2;
 }
 
-.toggle {
-  margin:4px;
-  background-color:#EFEFEF;
-  border-radius:4px;
-  border:1px solid #D0D0D0;
-  overflow:auto;
+.background1 {
+  height: 101vh;
+  width: 100vw;
+  background-image: url("https://thumb7.shutterstock.com/mosaic_250/1930034/622132631/stock-photo-blue-sky-with-cloud-622132631.jpg");
+  background-size: cover;
+  background-position: top;
+  background-blend-mode: screen;
+  position: fixed;
+  z-index: -2;
+}
+
+#heading {
+  padding:10px;
+  font-weight:bolder;
+  color:white;
+  font-size:70px;
+  text-shadow:5px 5px 5px rgb(0, 25, 164);
+}
+
+.btn {
+  background:  rgb(0, 25, 164);
+  color:white;
+}
+
+.surveycard {
+  background: rgba(255, 255, 255, 0.557);
+  box-shadow: 1px 3px 3px rgb(0, 25, 164);
+  padding-left:100px;
+  padding-right:100px;
+}
+
+#buttonarea {
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.heading2 {
+  padding-top:40px;
+  padding-bottom:20px;
+}
+
+.questionicon {
+  max-height:70px;
+}
+
+.question{
+  padding-top:20px;
+}
+
+.options {
+  list-style-type:none;
+  padding:0;
+}
+
+.options li {
   float:left;
+ width:60px;
+ height:40px;
+ position:relative;
 }
 
-.toggle label {
-  float:left;
-  width:2.0em;
+.donate-options label, .options input {
+ display:block;
+ position:absolute;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
 }
 
-.toggle label span {
-  text-align:center;
-  padding:3px 0px;
-  display:block;
-  cursor: pointer;
+.options input[type="radio"] {
+ opacity:0.011;
+ z-index:100;
 }
 
-.toggle label input {
-  position:absolute;
-  top:-20px;
+.options input[type="radio"]:checked + label {
+ background:rgb(0, 157, 255);
+ color:white;
 }
 
-.toggle .input-checked /*, .bounds input:checked + span works for firefox and ie9 but breaks js for ie8(ONLY) */ {
-  background-color:#404040;
-  color:#F7F7F7;
+.options label {
+  padding:5px;
+  border:1px solid #CCC; 
+  cursor:pointer;
+  z-index:90;
+  width:60px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.options label:hover {
+  background:rgba(0, 157, 255, 0.324);
 }
