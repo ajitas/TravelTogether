@@ -8,6 +8,9 @@
   position: fixed;
   z-index: -2;
 }
+body{
+  font-family: 'Courgette', cursive;
+}
 
 .background1 {
   height: 101vh;
@@ -26,6 +29,14 @@
   color:white;
   font-size:70px;
   text-shadow:5px 5px 5px rgb(0, 25, 164);
+}
+
+#globe{
+  max-height: 100px;
+}
+
+#train, #plane, #car{
+  max-width:80px;
 }
 
 .btn {
@@ -50,12 +61,16 @@
   padding-bottom:20px;
 }
 
+#name, #photo {
+  width:400px;
+}
+
 .questionicon {
   max-height:70px;
 }
 
 .question{
-  padding-top:20px;
+  padding-top:30px;
 }
 
 .options {
@@ -102,3 +117,29 @@
 .options label:hover {
   background:rgba(0, 157, 255, 0.324);
 }
+.icon{
+  text-align:right;
+}
+.questionoption{
+  text-align: left;
+  font-size:20px;
+}
+.error-name{
+  display:none;
+  color:red;
+}
+.error-photo{
+  display:none;
+  color:red;
+}
+
+@media screen and (max-width: 991px) {
+.icon {
+  text-align:left;
+}
+.questionoption{
+  text-align: left;
+}
+  
+}
+

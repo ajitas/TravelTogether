@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
 </head>
 <body>
@@ -15,149 +17,121 @@
   <div class="background1"></div>
   <div class="container">
     <div class="surveycard card">
-        <h1 class="text-center"><span id="heading">Travel Together</span></h1>
-        <hr>
-        <h3 class="text-center heading2">Take the survey and find yourself a travel companion!!!</h3>
-    
-        <div class="personInfo">
-            <form role="form">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="photo" placeholder="Photo URL">
-                </div>
-            </form>
+        <h1 class="text-center"><img id="globe" class="img-responsive" src="http://bestanimations.com/Earth&Space/Earth/earthglobeanimation/globe-earth-animation-9.gif"><span id="heading">Travel Together</span></h1>
+        <div class="text-center">
+            <img class="img-responsive" id="train" src="http://www.animatedimages.org/data/media/75/animated-train-image-0031.gif">
+            <img class="img-responsive" id="plane" src="https://media.giphy.com/media/TjFpCBpVPFCN2/giphy.gif">
+            <img class="img-responsive" id="car" src="https://www.gamedevmarket.net/file/f719d207aee6e1db9f15cac81c1bd59ca7856ccb.gif">
         </div>
+        <hr>
+        <h3 class="text-center heading2">Finding yourself a travel companion is just a few clicks away!!!</h3>
+    
+        <div class="personInfo row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-9">
+                <form id="info-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        <div class="error-name">Please enter name</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="photo" id="photo" placeholder="Photo URL">
+                        <div class="error-photo">Please enter photo URL</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center">1: Stronly Disagree &nbsp; 2: Disagree &nbsp; 3: Neutral &nbsp; 4: Agree &nbsp; 5: Strongly Agree</p>
         <div class="questionArea">
             <div class="row question">
-                <div class="col-lg-4 text-right">
+                <div class="col-lg-4 icon">
                     <img class="img-responsive questionicon" src="https://kathleenhalme.com/images/surfer-clipart-transparent-background-1.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to spend time on sports activities?</p>
-                            <ul class="options" id="optionsquestion1"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to spend time on sports activities?</p>
+                    <ul class="options" id="optionsquestion1"></ul> 
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
-                    <img class="img-responsive questionicon" src="https://currencykart.com/assets/img/itinerary/hotel.png">
+                <div class="col-lg-4 icon">
+                    <img class="img-responsive questionicon" src="https://privein.com.br/application/images/city.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to stay in luxury hotels?</p>
-                            <ul class="options" id="optionsquestion2"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to stay in luxury hotels?</p>
+                    <ul class="options" id="optionsquestion2"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
-                    <img class="img-responsive questionicon" src="https://cdn.pixabay.com/photo/2016/03/31/21/15/bread-1296280_960_720.png">
+                <div class="col-lg-4 icon">
+                    <img class="img-responsive questionicon" src="http://www.dsource.in/tool/trinetra/img/tool_images/2_1471327574.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to eat local food?</p>
-                            <ul class="options" id="optionsquestion3"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to eat local food?</p>
+                    <ul class="options" id="optionsquestion3"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
-                    <img class="img-responsive questionicon" src="https://cdn.pixabay.com/photo/2014/04/03/00/29/car-308454_960_720.png">
+                <div class="col-lg-4 icon">
+                    <img class="img-responsive questionicon" src="https://cdn.pixabay.com/photo/2016/04/01/12/00/automobile-1300467__340.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to rent a car/bike and drive it yourself?</p>
-                            <ul class="options" id="optionsquestion4"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to drive?</p>
+                    <ul class="options" id="optionsquestion4"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
+                <div class="col-lg-4 icon">
                     <img class="img-responsive questionicon" src="https://hanslodge.com/images/rTjrk7Aac.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to start the day early?</p>
-                            <ul class="options" id="optionsquestion5"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to start the day early?</p>
+                    <ul class="options" id="optionsquestion5"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
+                <div class="col-lg-4 icon">
                     <img class="img-responsive questionicon" src="https://orig00.deviantart.net/85ae/f/2012/235/f/8/club_penguin_dj_png_by_glenmartinez-d5c61id.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like late night parties?</p>
-                            <ul class="options" id="optionsquestion6"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like late night parties?</p>
+                    <ul class="options" id="optionsquestion6"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
-                    <img class="img-responsive questionicon" src="http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/512/shop-icon.png">
+                <div class="col-lg-4 icon">
+                    <img class="img-responsive questionicon" src="https://png2.kisspng.com/20180301/icw/kisspng-euclidean-vector-drawing-gift-vector-color-gift-box-5a9882e1676382.5510603015199444174235.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to shop for souvenirs?</p>
-                            <ul class="options" id="optionsquestion7"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to shop for souvenirs?</p>
+                    <ul class="options" id="optionsquestion7"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
+                <div class="col-lg-4 icon">
                     <img class="img-responsive questionicon" src="http://www.transparentpng.com/thumb/brass-band-instrument-png/brass-band-instrument-png-transparent-1.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like local music?</p>
-                            <ul class="options" id="optionsquestion8"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like local music?</p>
+                    <ul class="options" id="optionsquestion8"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
+                <div class="col-lg-4 icon">
                     <img class="img-responsive questionicon" src="http://clipart.coolclips.com/480/vectors/tf05109/CoolClips_peop3452.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to visit tourist attractions?</p>
-                            <ul class="options" id="optionsquestion9"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to visit tourist attractions?</p>
+                    <ul class="options" id="optionsquestion9"></ul>
                 </div>
             </div>
             <div class="row question">
-                <div class="col-lg-4 text-right">
+                <div class="col-lg-4 icon">
                     <img class="img-responsive questionicon" src="http://clipart.coolclips.com/480/vectors/tf05310/CoolClips_vc063071.png">
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Do you like to discover new places?</p>
-                            <ul class="options" id="optionsquestion10"></ul>
-                        </div>
-                    </div>
+                <div class="col-lg-8 questionoption">
+                    <p>Do you like to discover new places?</p>
+                    <ul class="options" id="optionsquestion10"></ul>
                 </div>
             </div>
         </div>
@@ -207,43 +181,57 @@
                   $("#optionsquestion"+parseInt(i+1)).append(newLi);
               }
           }
-  
+
           $("#name").on("focus", function(){
               $(this).attr("placeholder","");
+              $(".error-name").hide();
           })
           $("#name").on("blur", function(){
               $(this).attr("placeholder","Name");
           })
           $("#photo").on("focus", function(){
               $(this).attr("placeholder","");
+              $(".error-photo").hide();
           })
           $("#photo").on("blur", function(){
               $(this).attr("placeholder","Photo URL");
           })
           $("#find-btn").on("click", function(event){
               event.preventDefault();
-  
-              var answersArray = [];
-              for(var i =0;i<10;i++){
-                  answersArray.push($("input[name=question"+parseInt(i+1)+"]:checked").val());
+
+              $(".error-name").hide();
+              $(".error-photo").hide();
+              if($("#name").val().trim() === "" || $("#photo").val().trim() === ""){
+                if($("#name").val().trim() === ""){
+                    $(".error-name").show();
+                    $(this).attr("data-target","");
+                }
+                if($("#photo").val().trim() === ""){
+                    $(".error-photo").show();
+                    $(this).attr("data-target","");
+                }
               }
-          
-              var newPerson = {
-                  name:$("#name").val(),
-                  photoURL:$("#photo").val(),
-                  answers:answersArray
-              };
-  
-              $.post("/api/companion", newPerson, function(data){
-                  $.get("/api/match",function(data){
-                      //console.log(data.name);
-                      $("#exampleModalLabel").text(data.name);
-                      $("#companionPicture").attr("alt",data.photoURL);
-                      $("#companionPicture").attr("src",data.photoURL);
-                      $("#companionPicture").css("max-height","300px");
-  
-                  });
-              });
+              else{
+                var answersArray = [];
+                for(var i =0;i<10;i++)
+                    answersArray.push($("input[name=question"+parseInt(i+1)+"]:checked").val());
+            
+                var newPerson = {
+                    name:$("#name").val(),
+                    photoURL:$("#photo").val(),
+                    answers:answersArray
+                };
+                $.post("/api/companion", newPerson, function(data){
+                    $.get("/api/match",function(data){
+                        //console.log(data.name);
+                        $("#exampleModalLabel").text(data.name);
+                        $("#companionPicture").attr("alt",data.photoURL);
+                        $("#companionPicture").attr("src",data.photoURL);
+                        $("#companionPicture").css("max-height","300px");
+    
+                    });
+                });
+              }
           });
       });
       
