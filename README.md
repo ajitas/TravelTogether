@@ -6,16 +6,16 @@ TravelTogether is an node.js and express full-stack web application that lets th
 ## Application Preview
 
 ### Home Page
-![TravelTogether-Home](travel-together-home.gif)
+![TravelTogether-Home](app/public/images/travel-together-home.gif)
 
 ### Survey Page
-![TravelTogether-Survey](travel-together-survey.png)
+![TravelTogether-Survey](app/public/images/travel-together-survey.png)
 
 ### Survey Result
-![TravelTogether-Result](travel-together-result.png)
+![TravelTogether-Result](app/public/images/travel-together-result.png)
 
 ### API Data
-![TravelTogether-API](travel-together-api.png)
+![TravelTogether-API](app/public/images/travel-together-api.png)
 
 
 ## Technologies used
@@ -61,7 +61,7 @@ API Data is an object array wherein each object consists of a name, photoURL and
 ## Execution steps on local machine
 1. Make sure node is installed on your machine. You can visit the website [Node Installation](http://blog.teamtreehouse.com/install-node-js-npm-mac) for instructions.
 2. Download/Clone the respository.
-3. Inside ShopStop-CLI folder on terminal, type "node server.js" on terminal. This will start the server.
+3. Inside TravelTogether folder on terminal, type "node server.js" on terminal. This will start the server.
 4. Open the browser and type "localhost:8080". This will start executing the client part of the application. Since we are not storing the data in any database, the data user enters will only be available till the server is running (when user exits the server execution from terminal).
 
 ## Code snippets
