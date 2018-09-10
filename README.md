@@ -61,8 +61,9 @@ API Data is an object array wherein each object consists of a name, photoURL and
 ## Execution steps on local machine
 1. Make sure node is installed on your machine. You can visit the website [Node Installation](http://blog.teamtreehouse.com/install-node-js-npm-mac) for instructions.
 2. Download/Clone the respository.
-3. Inside TravelTogether folder on terminal, type "node server.js" on terminal. This will start the server.
-4. Open the browser and type "localhost:8080". This will start executing the client part of the application. Since we are not storing the data in any database, the data user enters will only be available till the server is running (when user exits the server execution from terminal).
+3. On terminal, go inside TravelTogether folder and type npm install. This will install all the dependencies required to run the application mentioned in package.json.
+4. Inside TravelTogether folder on terminal, type "node server.js" on terminal. This will start the server.
+5. Open the browser and type "localhost:8080". This will start executing the client part of the application. Since we are not storing the data in any database, the data user enters will only be available till the server is running (when user exits the server execution from terminal).
 
 ## Code snippets
 
