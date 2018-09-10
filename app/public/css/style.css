@@ -35,7 +35,7 @@ body{
   max-height: 100px;
 }
 
-#train, #plane, #car{
+#train, #plane, #car, #ship{
   max-width:80px;
 }
 
