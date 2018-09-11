@@ -1,7 +1,7 @@
 # TravelTogether
 
 ## About
-TravelTogether is an node.js and express full-stack web application that lets the user take a survey and finds a travel companion for them whose survey answers are closest match with the user's.
+TravelTogether is a full-stack web application using node.js and express that lets user take a survey and finds a travel companion for them whose survey answers are closest match with his answers.
 
 ## Deployed Link
 [TravelTogether-App](https://travel-together-1.herokuapp.com)
