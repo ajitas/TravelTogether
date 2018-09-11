@@ -244,6 +244,8 @@
                     photoURL:$("#photo").val(),
                     answers:answersArray
                 };
+                $("#name").val("");
+                $("#photo").val("")
                 //post the users information in the new object to the server
                 $.post("/api/companion", newPerson, function(data){
 
