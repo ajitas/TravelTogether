@@ -22,6 +22,7 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//Serve up static assets from app/public
 app.use(express.static(__dirname + "/app/public"));
 
 // ================================================================================
@@ -32,10 +33,6 @@ app.use(express.static(__dirname + "/app/public"));
 
 require("./app/routes/apiRoutes")(app);
 require("./app/routes/htmlRoutes")(app);
-
-// var apiRoutes = require("./routes/apiRoutes")
-// console.log(apiRoutes); //=> [Function]
-// apiRoutes(app);
 
 // =============================================================================
 // LISTENER
